@@ -9,7 +9,7 @@ if (isset($_GET['quizID'])) {
     $result1 = mysqli_query($dbConn, $sql1);
     
     $row1 = mysqli_fetch_assoc($result1);
-    $percentage = floor($row1['score']/15);
+    $percentage = floor($row1['score']/5); //divide by total number of questions
 
     $sql2 = "SELECT MAX(inserted_timestamp) as endTime FROM a1_user_answers WHERE quiz_id = " .$quizID ;
     $result2 = mysqli_query($dbConn, $sql2);
@@ -53,7 +53,7 @@ if (isset($_GET['quizID'])) {
             
         <div class="col-md-offset-2 col-md-8 col-md-offset-2 text-center alert alert-info">
             <h3>Result:</h3>
-            <h4><?php echo $row1['score']; ?> of 15</h4><br />
+            <h4><?php echo $row1['score']; ?> of 5</h4><br />
             <h4><?php echo $percentage."%" ;?></h4><br /><br />
             <h3>Time Spent</h3>
             <h4><?php echo $duration ?></h4><br /><br />

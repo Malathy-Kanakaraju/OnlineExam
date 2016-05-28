@@ -55,7 +55,7 @@ function insertAns(){
         
         <!-- Timer script -->
         <script type="text/javascript">
-            var count = 60*15; // number of seconds for timer
+            var count = 60*5; // number of seconds for timer
             var redirect = "results.php";
 
             function countDown(){
@@ -114,7 +114,7 @@ function insertAns(){
         </div>
         <div class="clearfix"></div>
         <div class="col-md-offset-2 col-md-8 col-md-offset-2">
-            <h4 class="pull-left">Total 15 Questions </h4>
+            <h4 class="pull-left">Total 5 Questions </h4>
             <h4 class="pull-right">
                 Time left - <span id="timer">
                     <script type="text/javascript">
@@ -195,7 +195,7 @@ require 'footer.php';
                 )
             $("input:radio[name='optans']").prop({checked:false});
             qNo++;
-            if (qNo < 16) {   /// **********************need to change it to 15 questions before submit
+            if (qNo < 6) {   /// **********************need to change it to 15 questions before submit
                 showNextQue(qNo);
             } else {
                 qID = quizID;

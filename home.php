@@ -22,7 +22,7 @@ require 'config.php';
             <h3 class="text-center">Welcome to the Online Examination Portal</h3><br />
             <ul class="instructions">
                 <li>Here you can take up quiz on the subjects</li>
-                <ol><li>HTML5</li><LI>CSS</LI><li>PHP</li><li>Javascript</li><li>jQuery</li><li>Bootstrap</li><li>JSON</li><li>AJAX</li></ol>
+                <ol><li>HTML5</li><LI>CSS</LI><li>PHP</li><li>Javascript</li><li>jQuery</li><li>Bootstrap</li><li>AJAX</li></ol>
                 <li>You can add new questions under "Add question" menu</li>
                 <li>Result history can be viewed under "Results" menu</li>
                 <li>If you wish you change your profile settings, go to "My Profile" menu</li>

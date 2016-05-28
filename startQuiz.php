@@ -43,8 +43,8 @@ if (isset($_POST['startQuizBtn'])) {
         <div class="col-md-offset-2 col-md-8 col-md-offset-2 alert alert-info">
             <h3 class="text-center">Carefully ready through these instructions before taking up the quiz</h3><br />
             <ul class="instructions">
-                <li>Total Questions: 15</li>
-                <li>Time Alloted: 15 Minutes</li>
+                <li>Total Questions: 5</li>
+                <li>Time Alloted: 5 Minutes</li>
                 <li>Subject specific objective questions</li>
                 <li>There is no negative marking</li>
                 <li>Choose a subject and Click on Start Quiz button to start the test</li>

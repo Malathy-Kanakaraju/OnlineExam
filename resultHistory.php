@@ -56,7 +56,7 @@ $totalPages = ceil(count($output)/$recPerPage);
                 <tr>
                     <th class="text-center">Quiz Date and Time</th>
                     <th class="text-center">Subject</th>
-                    <th class="text-center">Score<br /><small>Out of 15</small></th>
+                    <th class="text-center">Score<br /><small>Out of 5</small></th>
                     <th class="text-center">Percentage</th>
                 </tr>
                 </thead>
@@ -97,7 +97,7 @@ require 'footer.php';
             var startRec = <?php echo ($page - 1);?> * <?php echo $recPerPage;?>;
             var endRec = <?php echo $recPerPage;?> + startRec;
             for(var i=startRec;(i<endRec) && (i<totalRec);i++){
-                var newRow = "<tr><td class='text-center'>"+quiz[i].quizID+"</td><td class='text-center'>"+quiz[i].subject+"</td><td class='text-center'>"+quiz[i].score+"</td><td class='text-center'>"+Math.ceil((quiz[i].score)*100/15)+"%</td></tr>";
+                var newRow = "<tr><td class='text-center'>"+quiz[i].quizID+"</td><td class='text-center'>"+quiz[i].subject+"</td><td class='text-center'>"+quiz[i].score+"</td><td class='text-center'>"+Math.ceil((quiz[i].score)*100/5)+"%</td></tr>";
                 $("#results tbody").append(newRow);
             }
         </script>

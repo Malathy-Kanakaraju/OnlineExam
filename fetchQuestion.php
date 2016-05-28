@@ -4,7 +4,7 @@ require 'config.php';
 
 if (isset($_POST['sub'])) {
     $sub = $_POST['sub'];
-    $limit = 15;
+    $limit = 5;
     $sql = "SELECT a.question as question, a.question_id, a.opt1 as opt1, a.opt2 as opt2, a.opt3 as opt3, a.opt4 as opt4, a.correct_answer as correctAns"
             . " FROM a1_question_bank a, a1_subjects b WHERE a.subject_id = b.subject_id and b.subject = '" .$sub . "' ORDER BY rand() LIMIT " .$limit;  
     $result = mysqli_query($dbConn, $sql);
