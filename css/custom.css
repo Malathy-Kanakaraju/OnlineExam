@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -100px;
+}
+.panel-heading .glyphicon-user {
+    font-size: 5rem;
+}
+
+.push,
+.footer {
+    height: 100px;
+}
+
+.footer {
+    background-color: darkslategray;
+    color: white;
+}
+
+.instructions {
+    font-size: 15px;
+    line-height: 2;
+}
+
+.navbar-nav > li > a {
+    font-size: 15px;
+}
+
+/*
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    background-color: darkslategrey;
+    color: #ffffff;
+}
+*/
+.text-error {
+    color: red;
+    font-size: 2rem;
+}
+
+.table-bordered td, .table-bordered th, table{
+    border-color: black !important;
+}
