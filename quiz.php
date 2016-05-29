@@ -183,8 +183,8 @@ require 'footer.php';
             var selectedOption = $("input:radio[name='optans']:checked").val() ; 
             console.log('sel :'+selectedOption);
             var qNo = document.getElementById('sNo').innerHTML;
-            var queID = JSONdata.questionSet[qNo]['questionID'];
-            var corrAns = JSONdata.questionSet[qNo]['correctAns'];
+            var queID = JSONdata.questionSet[qNo-1]['questionID'];
+            var corrAns = JSONdata.questionSet[qNo-1]['correctAns'];
             
             $.post(
                     '<?php echo basename($_SERVER['PHP_SELF']);?>',

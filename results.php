@@ -9,7 +9,7 @@ if (isset($_GET['quizID'])) {
     $result1 = mysqli_query($dbConn, $sql1);
     
     $row1 = mysqli_fetch_assoc($result1);
-    $percentage = floor($row1['score']/5); //divide by total number of questions
+    $percentage = floor($row1['score']*100/5); //divide by total number of questions
 
     $sql2 = "SELECT MAX(inserted_timestamp) as endTime FROM a1_user_answers WHERE quiz_id = " .$quizID ;
     $result2 = mysqli_query($dbConn, $sql2);
