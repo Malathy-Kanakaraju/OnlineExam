@@ -14,8 +14,6 @@ Key features of this build
 
 (5) AJAX
 
-(6) JSON
+(6) jQuery
 
-(7) jQuery
-
-(8) JavaScript
+(7) JavaScript
