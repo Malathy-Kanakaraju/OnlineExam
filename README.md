@@ -1,5 +1,5 @@
 # OnlineExam
-# Preview demo here "http://myfirstphp.comlu.com/OnlineExam/"
+# Preview demo here "http://myproject.890m.com/OnlineExam"
 Online Quiz Portal for web technologies
 
 Key features of this build
